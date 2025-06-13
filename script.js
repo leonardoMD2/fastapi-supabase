@@ -1,5 +1,5 @@
-const getEndpoint = "http://localhost:8000/users"
-const postEndpoint = "http://localhost:8000/insert_user"
+const getEndpoint = "https://fastapi-supabase-oxdd.vercel.app/users"
+const postEndpoint = "https://fastapi-supabase-oxdd.vercel.app/insert_user"
 
 const getDataButton = document.querySelector(".get")
 const sectiondata = document.querySelector(".data")
