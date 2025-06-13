@@ -1,4 +1,4 @@
-import psycopg2
+import psycopg
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
@@ -7,7 +7,7 @@ databasepass = "123456abc"
 url2= f"postgresql://postgres.ungwosiuhjtkxdnrbttr:{databasepass}@aws-0-us-east-2.pooler.supabase.com:6543/postgres"
 def getConnection():
     try:
-        conn = psycopg2.connect(url2, sslmode='require')
+        conn = psycopg.connect(url2, sslmode='require')
         
         return conn
     except Exception as e:
